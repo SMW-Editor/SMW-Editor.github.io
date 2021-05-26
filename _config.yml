@@ -58,22 +58,23 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "SMW Editor Team"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "SMW Editor"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://smw-editor.github.io"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    - label: "Project Repository"
+      icon: "fas fa-fw fa-github"
       url: "https://github.com/SMW-Editor/smw-editor"
+    - label: "Website Repository"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/SMW-Editor/SMW-Editor.github.io"
 
 footer:
   links:
-    - label: "GitHub"
+    - label: "Project Repository"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/SMW-Editor/smw-editor"
+    - label: "Website Repository"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/SMW-Editor/SMW-Editor.github.io"
 
 defaults:
   # _posts
