@@ -61,7 +61,7 @@ author:
   name   : "SMW Editor"
   links:
     - label: "Project Repository"
-      icon: "fas fa-fw fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/SMW-Editor/smw-editor"
     - label: "Website Repository"
       icon: "fab fa-fw fa-github"
