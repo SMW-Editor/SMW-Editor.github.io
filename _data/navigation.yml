@@ -8,7 +8,7 @@ smw_rom_docs:
     children:
       - title: "General"
         url: /docs/smw-rom/home/
-      - title: "Internal ROM header"
+      - title: "Internal ROM Header"
         url: /docs/smw-rom/internal-rom-header/
       - title: "Compression Methods"
         url: /docs/smw-rom/compression-methods/
@@ -19,7 +19,7 @@ smw_rom_docs:
         url: /docs/smw-rom/graphics/color-palettes/
       - title: "GFX Files"
         url: /docs/smw-rom/graphics/gfx-files/
-        
+
   - title: "Levels"
     children:
       - title: "Level Headers"
