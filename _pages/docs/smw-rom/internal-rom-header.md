@@ -81,14 +81,14 @@ If `P` has a value greater than `2`, it means that the cartridge uses the expans
 
 | Values of `X` | Expansion chip |
 | ------------- | -------------- |
-| 0             | DSP            |
-| 1             | SuperFX        |
-| 2             | OBC-1          |
-| 3             | SA1            |
-| 4             | S-DD1          |
-| 5             | S-RTC          |
-| E             | Other          |
-| F             | Custom         |
+| `0x0`         | DSP            |
+| `0x1`         | SuperFX        |
+| `0x2`         | OBC-1          |
+| `0x3`         | SA1            |
+| `0x4`         | S-DD1          |
+| `0x5`         | S-RTC          |
+| `0xE`         | Other          |
+| `0xF`         | Custom         |
 
 ## ROM size
 
