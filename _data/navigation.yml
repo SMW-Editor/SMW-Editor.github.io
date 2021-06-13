@@ -1,4 +1,32 @@
 # main links
 main:
   - title: "SMW ROM Documentation"
-    url: /smw-rom-doc/
+    url: /docs/smw-rom/home/
+
+smw_rom_docs:
+  - title: "SMW ROM Documentation"
+    children:
+      - title: "General"
+        url: /docs/smw-rom/home/
+      - title: "Internal ROM header"
+        url: /docs/smw-rom/internal-rom-header/
+      - title: "Compression Methods"
+        url: /docs/smw-rom/compression-methods/
+
+  - title: "Graphics"
+    children:
+      - title: "Color Palettes"
+        url: /docs/smw-rom/graphics/color-palettes/
+      - title: "GFX Files"
+        url: /docs/smw-rom/graphics/gfx-files/
+        
+  - title: "Levels"
+    children:
+      - title: "Level Headers"
+        url: /docs/smw-rom/levels/level-headers/
+      - title: "Object Data"
+        url: /docs/smw-rom/levels/object-data/
+      - title: "Background Data"
+        url: /docs/smw-rom/levels/background-data/
+      - title: "Sprite Data"
+        url: /docs/smw-rom/levels/sprite-data/
