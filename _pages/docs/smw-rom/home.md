@@ -24,9 +24,9 @@ In order to avoid confusion, the following sections explain how all kinds data a
 ## Number literals
 
 All number values that are not addresses may have a base prefix:
-- Binary numbers (base 2) are prefixed with `0b`, for example `0b11010100`
-- Hexadecimal numbers (base 16) are prefixed with `0x`, for example `0xDEADC0DE`
-- Decimal numbers (base 10) have no prefix, for example `42`
+- Binary numbers (base 2) are suffixed with subscript 2, for example <code>11010100<sub>2</sub></code>
+- Hexadecimal numbers (base 16) are suffixed with subscript 16, for example <code>DEADC0DE<sub>16</sub></code>
+- Decimal numbers (base 10) have no suffix, for example `42`
 
 ## Arithmetics and comparisons
 
@@ -53,7 +53,7 @@ All number values that are not addresses may have a base prefix:
 
 Sometimes, it is easier to describe a certain data format by representing a sequence of bytes/nibbles/bits as a template.
 
-Take this template of a binary number as an example: `001F0HLh`.
+Take this template of a binary number as an example: <code>001F0HLh<sub>2</sub></code>.
 It contains both the digits that can appear in a binary representation, as well as some letters.
 
 The digits are set values which never vary.
@@ -62,7 +62,7 @@ What each placeholder means is usually explained right below the template.
 
 ## Addresses
 
-Addresses are prefixed with currency symbols:
+Addresses are base 16 numbers prefixed with currency symbols:
 - PC addresses: pound sign `£`, for example `£007FC0`
 - SNES addresses: dollar sign `$`, for example `$08D9F9`
 
