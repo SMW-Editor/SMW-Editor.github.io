@@ -22,7 +22,7 @@ title: SMW Editor
 #   #twitter_username: username
 description: ""
 github_username: SMW-Editor
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: dark
 search: true
 url: "https://smw-editor.github.io"
 repository: "SMW-Editor/SMW-Editor.github.io"
