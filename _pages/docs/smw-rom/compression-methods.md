@@ -11,7 +11,7 @@ This page explains how to decompress that data depending on the algorithm.
 
 # LC_RLE1
 
-The first byte is a command in the format <code>FLLLLLLL<sub>2</sub></code>, where `F` stands for the RLE flag, and `LLLLLLL` stands for `length`.
+The first byte is a command in the format <code>FLLLLLLL<sub>2</sub></code>, where the `F` stands for the RLE flag, and the `L`&#8209;s stand for `length`.
 Depending on the value of the RLE flag, the bytes that follow the command are interpreted either way:
 
 | RLE flag | Behaviour                                        |
@@ -25,7 +25,7 @@ Our implementation of the LC_RLE1 decompressor can be found <a href="https://git
 
 # LC_LZ2
 
-The first byte is a header in the format <code>CCCLLLLL<sub>2</sub></code>, where `CCC` stands for the Command, and `LLLLL` stands for `length`.
+The first byte is a header in the format <code>CCCLLLLL<sub>2</sub></code>, where the `C`&#8209;s stand for command, and the `L`&#8209;s stand for `length`.
 Depending on the command, the bytes that follow the header are interpreted in a variety of ways:
 
 | Command                                            | Behaviour                                                                                                      |
