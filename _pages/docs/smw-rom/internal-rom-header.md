@@ -144,7 +144,7 @@ The checksum is calculated by adding the values of every single byte in the ROM 
 Because the checksum itself is also used in this calculation, it comes together with a complement check equal to `¬checksum`, ensuring that they always add up to the same value:
 
 ```
-checksum + complement = 0x1FE
+checksum + complement = 1FE₁₆
 ```
 
 Checksum and complement check are used by SNES for validating the ROM.

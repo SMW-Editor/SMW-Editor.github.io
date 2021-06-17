@@ -34,7 +34,7 @@ All number values that are not addresses may have a base prefix:
 | -------------------------- | ---------------- |
 | `+`                        | addition         |
 | `-`                        | subtraction      |
-| `*`                        | multiplication   |
+| `×`                        | multiplication   |
 | `/`                        | division         |
 | `mod`                      | modulo           |
 | <code>n<sup>x</sup></code> | power            |
