@@ -49,20 +49,23 @@ Where each letter corresponds to a flag:
 | L    | 0<br>1 | Non-ExLoROM<br>ExLoROM        |
 | h    | 0<br>1 | LoROM<br>HiROM                |
 
-Note: only one or none of the last 3 bits (`H`, `L`, and `h`) may be set at the same time.
-The `F` bit may be set or unset regardless of the values of other bits.
+<div>
+<b>Note</b>: only one or none of the last 3 bits (<code>H</code>, <code>L</code>, and <code>h</code>) may be set at the same time.
+The <code>F</code> bit may be set or unset regardless of the values of other bits.
 This yields the following range of values:
 
-| Value                             | Map Mode      |
-| --------------------------------- | ------------- |
-| <code>00100000<sub>2</sub></code> | LoROM         |
-| <code>00100001<sub>2</sub></code> | HiROM         |
-| <code>00100010<sub>2</sub></code> | ExLoROM       |
-| <code>00100100<sub>2</sub></code> | ExHiROM       |
-| <code>00110000<sub>2</sub></code> | Fast LoROM    |
-| <code>00110001<sub>2</sub></code> | Fast HiROM    |
-| <code>00110010<sub>2</sub></code> | Fast ExLoROM  |
-| <code>00110100<sub>2</sub></code> | Fast ExHiROM  |
+<ul>
+    <li><code>00100000<sub>2</sub></code> (LoROM)</li>
+    <li><code>00100001<sub>2</sub></code> (HiROM)</li>
+    <li><code>00100010<sub>2</sub></code> (ExLoROM)</li>
+    <li><code>00100100<sub>2</sub></code> (ExHiROM)</li>
+    <li><code>00110000<sub>2</sub></code> (Fast LoROM)</li>
+    <li><code>00110001<sub>2</sub></code> (Fast HiROM)</li>
+    <li><code>00110010<sub>2</sub></code> (Fast ExLoROM)</li>
+    <li><code>00110100<sub>2</sub></code> (Fast ExHiROM)</li>
+</ul>
+</div>
+{: .notice--info}
 
 ## Cartridge type
 
