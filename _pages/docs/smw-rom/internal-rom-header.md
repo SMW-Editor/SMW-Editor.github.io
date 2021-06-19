@@ -159,9 +159,4 @@ This can be used to find the location of the IRH and deduce the mapping mode fro
 Information in the [Data format](/docs/smw-rom/internal-rom-header/#data-format) section is based on this video by Retro Game Mechanics Explained.
 Thank you!
 
-<a href   = "http://www.youtube.com/watch?feature=player_embedded&v=RAa561BoWwA"
-   target = "_blank">
-   <img src    = "http://img.youtube.com/vi/RAa561BoWwA/0.jpg"
-        alt    = "Internal ROM Header - Super Nintendo Entertainment System Features Pt. 09c"
-        border = "10" />
-</a>
+{% include video id="RAa561BoWwA" provider="youtube" %}
