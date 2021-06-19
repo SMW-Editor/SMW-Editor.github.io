@@ -28,37 +28,55 @@ All number values that are not addresses may have a base prefix:
 - Hexadecimal numbers (base 16) are suffixed with subscript 16, for example <code>DEADC0DE<sub>16</sub></code>
 - Decimal numbers (base 10) have no suffix, for example `42`
 
-## Arithmetics and comparisons
+Digits in numbers may sometimes be divided by `_` for increased readability, for example `1_234_567`.
 
-| Symbol                     | Function         |
+## Text strings
+
+ASCII strings are enclosed between a pair of quotation marks, for example `"Hello World"`.
+
+## Units of data
+
+- Bit = the fundamental unit of data.<br>Can be either 0 (unset) or 1 (set).
+- Nibble = 4 bits.
+- Byte = 2 nibbles = 8 bits.
+- Word = 2 bytes = 4 nibbles = 16 bits.
+
+## Arithmetics
+
+| Expression                 | Function         |
 | -------------------------- | ---------------- |
-| `+`                        | addition         |
-| `-`                        | subtraction      |
-| `×`                        | multiplication   |
-| `/`                        | division         |
-| `mod`                      | modulo           |
-| <code>n<sup>x</sup></code> | power            |
-| `∨`                        | bitwise OR       |
-| `∧`                        | bitwise AND      |
-| <code>&oplus;</code>       | bitwise XOR      |
-| `¬`                        | bitwise NOT      |
-| `=`                        | equal            |
-| `≠`                        | not equal        |
-| `<`                        | less than        |
-| `≤`                        | less or equal    |
-| `>`                        | greater than     |
-| `≥`                        | greater or equal |
+| `a + b`                    | addition         |
+| `a - b`                    | subtraction      |
+| `a × b`                    | multiplication   |
+| `a / b`                    | division         |
+| `a mod b`                  | modulo           |
+| <code>a<sup>b</sup></code> | power            |
+| `a | b`                    | bitwise OR       |
+| `a & b`                    | bitwise AND      |
+| `a ^ b`                    | bitwise XOR      |
+| `¬a`                       | bitwise NOT      |
+| `a << b`                   | bit shift left   |
+| `a >> b`                   | bit shift right  |
 
-## Templates
+## Comparisons
 
-Sometimes, it is easier to describe a certain data format by representing a sequence of bytes/nibbles/bits as a template.
+| Expression | Function                 |
+| ---------- | ------------------------ |
+| `a = b`    | `a` equal `b`            |
+| `a ≠ b`    | `a` not equal `b`        |
+| `a < b`    | `a` less than `b`        |
+| `a ≤ b`    | `a` less or equal `b`    |
+| `a > b`    | `a` greater than `b`     |
+| `a ≥ b`    | `a` greater or equal `b` |
 
-Take this template of a binary number as an example: <code>001F0HLh<sub>2</sub></code>.
-It contains both the digits that can appear in a binary representation, as well as some letters.
+## Logic
 
-The digits are set values which never vary.
-On the other hand, letters are just placeholders and can take any possible value.
-What each placeholder means is usually explained right below the template.
+| Expression | Function              |
+| ---------- | --------------------- |
+| `not a`    | negation              |
+| `a and b`  | conjunction           |
+| `a or b`   | disjunction           |
+| `a xor b`  | exclusive disjunction |
 
 ## Addresses
 
@@ -72,17 +90,17 @@ You will use them to access a specific byte of the ROM e.g. using a hex editor.
 An SNES address is what the SNES uses for accessing data in different parts of its memory.
 Its corresponding PC address depends on the [map mode](/docs/smw-rom/internal-rom-header/#map-mode) used by a ROM.
 
-## Values at given addresses
+## Values at specific addresses
 
 To represent them, we use the hypothetical functions `read(addr)` (reads a byte) and `readw(addr)` (reads a word), where `addr` can be either a PC or SNES address.
 
-## Text strings
+## Templates
 
-ASCII strings are enclosed between a pair of quotation marks, for example `"Hello World"`.
+Sometimes, it is easier to describe a certain data format by representing a sequence of bytes/nibbles/bits as a template.
 
-## Units of data
+Take this template of a binary number as an example: <code>001F0HLh<sub>2</sub></code>.
+It contains both the digits that can appear in a binary representation, as well as some letters.
 
-- Bit = the fundamental unit of data.<br>Can be either 0 (unset) or 1 (set).
-- Nibble = 4 bits.
-- Byte = 2 nibbles = 8 bits.
-- Word = 2 bytes = 4 nibbles = 16 bits.
+The digits are set values which never vary.
+On the other hand, letters are just placeholders and can take any possible value.
+What each placeholder means is usually explained right below the template.

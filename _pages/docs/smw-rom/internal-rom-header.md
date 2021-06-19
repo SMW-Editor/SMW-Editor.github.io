@@ -151,8 +151,8 @@ Checksum and complement check are used by SNES for validating the ROM.
 Bitwise XOR of the checksum and its complement check is always equal to <code>FFFF<sub>16</sub></code>.
 
 This can be used to find the location of the IRH and deduce the mapping mode from that:
-- If <code>readw(£007FDC) &oplus; readw(£007FDE) = FFFF<sub>16</sub></code>, it means that the IRH is at `£007FC0` and we're in LoROM.
-- If <code>readw(£00FFDC) &oplus; readw(£00FFDE) = FFFF<sub>16</sub></code>, it means that the IRH is at `£00FFC0` and we're in HiROM.
+- If <code>readw(£007FDC) ^ readw(£007FDE) = FFFF<sub>16</sub></code>, it means that the IRH is at `£007FC0` and we're in LoROM.
+- If <code>readw(£00FFDC) ^ readw(£00FFDE) = FFFF<sub>16</sub></code>, it means that the IRH is at `£00FFC0` and we're in HiROM.
 
 # Acknowledgments
 

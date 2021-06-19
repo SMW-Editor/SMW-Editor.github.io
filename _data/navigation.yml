@@ -8,6 +8,8 @@ smw_rom_docs:
     children:
       - title: "General"
         url: /docs/smw-rom/home/
+      - title: "Address Conversion"
+        url: /docs/smw-rom/address-conversion/
       - title: "Internal ROM Header"
         url: /docs/smw-rom/internal-rom-header/
       - title: "Compression Methods"
